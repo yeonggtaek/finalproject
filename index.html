@@ -3,22 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
+    <title>Yeongtaek's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background-color: #5E686D;
+            color: #FFFFFF;
+            text-align: center;
         }
-        h1 {
-            color: #333;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #5E686D;
+        }
+
+        header nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            margin-top: 50px;
+        }
+
+        .intro h1 {
+            font-size: 36px;
+        }
+
+        .intro p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .intro button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #FFFFFF;
+            color: #4E4E4E;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .intro button:hover {
+            background-color: #E0E0E0;
+        }
+
+        .projects {
+            margin: 50px 0;
+        }
+
+        .projects h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .project-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            background-color: #FFFFFF;
+            color: #4E4E4E;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item img {
+            width: 100%;
+        }
+
+        .project-item h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .project-item p {
+            font-size: 16px;
+            margin: 0 15px 15px;
+        }
+
+        .contact {
+            margin: 50px 0;
+        }
+
+        .contact h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-icons a {
+            color: #FFFFFF;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .contact-icons img {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Yeongtaek's Website</h1>
-    <p>This is my personal homepage hosted on yeongtaek.dev!</p>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Project</a>
+            <a href="#">About</a>
+            <a href="#">Resume</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1>Hello! I'm Yeongtaek</h1>
+        <p>I'm a Designer & Developer!</p>
+        <button>View Projects</button>
+    </div>
+
+    <div class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="" alt="Remedify project">
+                <h3>Remedify</h3>
+                <p>Remedify is an AI-powered app</p>
+            </div>
+            <div class="project-item">
+                <img src="" alt="Project name">
+                <h3>Project Name</h3>
+                <p>Description</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h3>Contact me!</h3>
+        <div class="contact-icons">
+            <a href="#"><img src="" alt="LinkedIn"></a>
+            <a href="#"><img src="" alt="Email"></a>
+            <a href="#"><img src="" alt="GitHub"></a>
+        </div>
+    </div>
 </body>
 </html>
