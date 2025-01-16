@@ -14,11 +14,18 @@
         }
 
         header {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 95%; 
+            height: 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
             background-color: #ECE0CB;
+            z-index: 1000; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         }
 
         header nav a {
@@ -31,6 +38,10 @@
         header nav a:hover {
             text-decoration: underline;
             color: #0F4C81;
+        }
+
+        .content {
+            margin-top: 130px; 
         }
 
         .intro {
@@ -140,35 +151,37 @@
         </nav>
     </header>
 
-    <div class="intro">
-        <h1>Hello! I'm Yeongtaek</h1>
-        <p>I'm a Designer & Developer!</p>
-        <button>View Projects</button>
-    </div>
+    <div class="content">
+        <div class="intro">
+            <h1>Hello! I'm Yeongtaek</h1>
+            <p>I'm a Designer & Developer!</p>
+            <button>View Projects</button>
+        </div>
 
-    <div class="projects">
-        <h2>Project</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="img/planet saver.png" alt="planet saver">
-                <h3>Planet Saver</h3>
-                <p>Planet Saver is Simple web </p>
-            </div>
-            <div class="project-item">
-                <img src="img/remedify.png" alt="Remedify">
-                <h3>Remedify</h3>
-                <p>Remedify is an AI-powered app</p>
+        <div class="projects">
+            <h2>Project</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="img/planet saver.png" alt="planet saver">
+                    <h3>Planet Saver</h3>
+                    <p>Planet Saver is Simple web </p>
+                </div>
+                <div class="project-item">
+                    <img src="img/remedify.png" alt="Remedify">
+                    <h3>Remedify</h3>
+                    <p>Remedify is an AI-powered app</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="contact">
-        <h3>Contact me!</h3>
-        <img src="img/icon.png" alt="icon">
-        <div class="contact-icons">
-            <a href="#"><img src="" alt="LinkedIn"></a>
-            <a href="#"><img src="" alt="Email"></a>
-            <a href="#"><img src="" alt="GitHub"></a>
+        <div class="contact">
+            <h3>Contact me!</h3>
+            <img src="img/icon.png" alt="icon">
+            <div class="contact-icons">
+                <a href="#"><img src="" alt="LinkedIn"></a>
+                <a href="#"><img src="" alt="Email"></a>
+                <a href="#"><img src="" alt="GitHub"></a>
+            </div>
         </div>
     </div>
 </body>
