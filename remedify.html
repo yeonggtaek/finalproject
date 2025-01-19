@@ -14,18 +14,18 @@
         }
 
         header {
-            position: fixed; 
+            position: fixed;
             top: 0;
             left: 0;
-            width: 95%; 
+            width: 100%;
             height: 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
             background-color: #ECE0CB;
-            z-index: 1000; 
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header nav a {
@@ -40,12 +40,36 @@
             color: #0F4C81;
         }
 
-        .remedify {
-            margin-top: 130px; 
+        .content {
+            margin-top: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
         }
 
-        .med {
-            width: 40%;
+        .description {
+            max-width: 50%;
+            text-align: left;
+        }
+
+        .description h3 {
+            margin: 0;
+            font-size: 22px;
+            color: #0F4C81;
+        }
+
+        .description p {
+            margin-top: 10px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .image-container img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -61,21 +85,16 @@
             <a href="#">Resume</a>
         </nav>
     </header>
-    <div>
-        <div class="remedify">
-            <img src="img/remedify logo.png" alt="remedify icon">
-        </div>
-        <div>
+    <div class="content">
+        <div class="description">
+            <img src="img/remedify logo.png" alt="remedify logo">
             <li>Sep - Dec 2024</li>
-            <li>ROLE: Developer</li>
+            <li>ROLE: Developer</li>
+            <p>Remedify is an AI-powered app designed to improve medication adherence by addressing common challenges like misunderstanding and forgetfulness. It simplifies managing medications with features like a personalized schedule, AI-powered photo recognition for adding medications, and a comprehensive Medication Library providing detailed drug information.</p>
         </div>
-        <div>
-            <img src="img/remedify.png" alt="remedify home">
+        <div class="image-container">
+            <img src="img/remedify.png" alt="Remedify Home">
         </div>
     </div>
-    <p>What is remedify?</p>
-    <p class="med">Remedify is an AI-powered app designed to improve medication adherence by addressing common challenges like misunderstanding and forgetfulness. It simplifies managing medications with features like a personalized schedule, AI-powered photo recognition for adding medications, and a comprehensive Medication Library providing detailed drug information. </p>
-    <img src="img/med library.png" alt="medlibrary">
 </body>
 </html>
-
